@@ -1,15 +1,14 @@
-import problems.FindTheIndexOfTheFirstOccurance;
-import problems.RemoveDeuplicatesFromSortedArray;
-import problems.SearchInsertPosition;
+import problems.PlusOne;
+
 
 public class Main {
     public static void main(String[] args) {
-        SearchInsertPosition search = new SearchInsertPosition();
-        int[] nums = new int[4];
-        nums[0] = 1;
-        nums[1] = 3;
-        nums[2] = 5;
-        nums[3] = 6;
-        System.out.println(search.searchInsert(nums, 5));
+        PlusOne plusOne = new PlusOne();
+        int[] digits = new int[1];
+        digits[0] = 9;
+        digits = plusOne.plusOne(digits);
+        for (int i = 0; i < digits.length; i++) {
+            System.out.println(digits[i]);
+        }
     }
 }
